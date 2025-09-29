@@ -6,6 +6,8 @@ import (
 )
 
 func hello(w http.ResponseWriter, r *http.Request) {
+	message := "Hello from the server!"
+	fmt.Println(message)
 	fmt.Fprintln(w, "Hello, world")
 }
 
